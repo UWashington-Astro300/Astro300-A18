@@ -1,0 +1,83 @@
+---------------------------------------------------------------------
+Astronomy 300 - Inital Setup
+---------------------------------------------------------------------
+
+Open up a terminal on one the astrolab machines (right click on the
+background and select Open Terminal). First thing to do is to run the
+setup file. The "$" is the Unix prompt, you do not type this character.
+
+Get the setup file:
+
+$ cd
+$ cp ~pikaia/setup .   make sure to type the "."
+$ tcsh setup
+
+Lets get some files to work with (Mac users start here):
+
+$ git clone https://github.com/UWashington-Astro300/Astro300-A18.git
+
+---------------------------------------------------------------------
+Astronomy 300 - Week 0 Notes - Command Line Data Exploration
+---------------------------------------------------------------------
+
+$ cd Astro300-A18      change directory
+
+$ pwd                  Show the current directory path.
+
+$ cd Data              change to the Data directory
+
+$ pwd
+
+$ ls
+
+. a single "." - this refers to the directory you are in
+
+$ ls .
+
+.. two ".." - this refers to the directory above your current directory
+
+$ ls ..
+
+$ ls A               list the files in the subdirectory named "A"
+$ ls B               list the files in the subdirectory named "B"
+$ ls C               list the files in the subdirectory named "C"
+
+$ ls -R              list all of the files in this dirctory AND below
+
+$ tree               a nice representation of the directory structure
+
+---------------------------------------------------------------------
+
+$ cat BrightStars.csv
+$ more BrightStars.csv                  "q" to quit
+$ less BrightStars.csv                  "q" to quit
+
+$ cp BrightStars.csv junk.dat           Copy files
+$ mv junk.dat junque.dat                Rename files
+$ rm junque.dat                         Delete file (NO RECOVERY!)
+
+---------------------------------------------------------------------
+
+wildcards (*) and (?)
+
+* - Matches ANY (0 or more) character or characters in a filename.
+? - Matches ANY ONE character in a filename.
+
+$ ls B*.csv        will find BrightStars.csv
+$ ls B?.csv        will NOT find BrightStars.csv
+
+Be very careful with "*".  It can ruin your life!  For example "rm *"
+will wipe out all of your files in the current directory, no questions
+asked, no chance of recovery. 
+
+---------------------------------------------------------------------
+
+[TAB] Completion
+$ less B[TAB]      Hit [TAB] again to show all options
+
+[UP] [DOWN] arrows - command history
+
+$ history          Shows history of commands
+
+$ !num             will rerun num command
+
