@@ -89,3 +89,14 @@ $ cat J[TAB]      Hit [TAB] again to show all options
 $ history          Shows history of commands
 
 $ !num             will rerun num command
+
+---------------------------------------------------------------------
+
+$ cd      change directory
+$ ls      list files in directory
+$ pwd     show current directory
+$ cp      copy
+$ mv      move (rename)
+$ rm      remove (delete)
+
+---------------------------------------------------------------------
